@@ -14,5 +14,5 @@ copy this code in to the created file https://codeshare.io/GLb6Yk
 react-native run-android
 ```
 Please use this user for testing
-user: tripheo2410
-password: Testing123@
+</br>user: tripheo2410
+</br>password: Testing123@
