@@ -26,7 +26,7 @@ const Icon = ({ name }) => {
     } else if (name === "feed") {
         return (
             <Image
-                source={require("../images/icons/boomboxcropped.png")}
+                source={require("../images/icons/newsfeed.png")}
                 style={{ width: 25, height: 25 }}
             />
         );
