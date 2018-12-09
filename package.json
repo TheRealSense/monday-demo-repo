@@ -1,0 +1,37 @@
+{
+    "name": "creatio",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node node_modules/react-native/local-cli/cli.js start",
+        "test": "jest"
+    },
+    "dependencies": {
+        "aws-amplify": "^1.1.13",
+        "aws-amplify-react-native": "^2.0.11",
+        "react": "16.6.1",
+        "react-native": "0.57.7",
+        "react-native-nfc-manager": "^1.1.2",
+        "react-redux": "^6.0.0",
+        "redux": "^4.0.1",
+        "redux-persist": "^5.10.0",
+        "redux-thunk": "^2.3.0"
+    },
+    "devDependencies": {
+        "babel-jest": "23.6.0",
+        "jest": "23.6.0",
+        "metro-react-native-babel-preset": "0.50.0",
+        "react-native-activity-feed": "^0.6.10",
+        "react-native-keyboard-aware-scroll-view": "^0.5.0",
+        "react-navigation": "^2.3.1",
+        "react-test-renderer": "16.6.1"
+    },
+    "jest": {
+        "preset": "react-native"
+    },
+    "rnpm": {
+        "assets": [
+            "./src/assets/fonts"
+        ]
+    }
+}
