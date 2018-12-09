@@ -60,6 +60,8 @@ const TabNavigator = createBottomTabNavigator(
                     return <Icon name="home" />;
                 } else if (routeName === "Search") {
                     return <Icon name="search" />;
+                } else if (routeName === "Feed") {
+                    return <Icon name="feed" />;
                 } else if (routeName === "Notifications") {
                     return (
                         <IconBadge showNumber>
