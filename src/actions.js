@@ -85,12 +85,10 @@ function logInFailure(err) {
 }
 
 export function authenticate(username, password) {
-    console.warn(username, password);
     return dispatch => {
         dispatch(logIn());
         Auth.signIn(username, password)
             .then(user => {
-                console.warn(user);
                 dispatch(logInSuccess(user));
                 dispatch(confirmLoginSuccess(user));
                 //dispatch(showSignInConfirmationModal())
