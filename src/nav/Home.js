@@ -12,7 +12,7 @@ import {
     Image,
     TouchableOpacity
 } from "react-native";
-import { RNS3 } from "react-native-aws3";
+//import { RNS3 } from "react-native-aws3";
 import { connect } from "react-redux";
 import { Auth } from "aws-amplify";
 import NfcManager, { Ndef } from "react-native-nfc-manager";
@@ -131,12 +131,12 @@ class Home extends React.Component {
                 secretKey: "+C079IXaNX275uj5+GxMq7nv3BBeoPx8Qw2ydsyh",
                 successAcctionStatus: 201
             };
-            RNS3.put(file, config).then(res => {
-                console.warn(res);
-            });
-            RNS3.put(file, config).then(res => {
-                console.warn(res);
-            });
+            // RNS3.put(file, config).then(res => {
+            //     console.warn(res);
+            // });
+            // RNS3.put(file, config).then(res => {
+            //     console.warn(res);
+            // });
 
             this.setState({ uri: res.uri });
         });
@@ -151,20 +151,20 @@ class Home extends React.Component {
             <View style={styles.container}>
                 <View style={styles.homeContainer}>
                     <Text style={styles.welcome}>Welcome</Text>
-                    <TouchableOpacity onPress={this.takePic.bind(this)}>
-                        <Image
-                            style={{
-                                paddingVertical: 5,
-                                width: 150,
-                                height: 150,
-                                borderRadius: 75
-                            }}
-                            resizeMode="cover"
-                            source={{
-                                uri: this.state.uri
-                            }}
-                        />
-                    </TouchableOpacity>
+                    // <TouchableOpacity onPress={this.takePic.bind(this)}>
+                    //     <Image
+                    //         style={{
+                    //             paddingVertical: 5,
+                    //             width: 150,
+                    //             height: 150,
+                    //             borderRadius: 75
+                    //         }}
+                    //         resizeMode="cover"
+                    //         source={{
+                    //             uri: this.state.uri
+                    //         }}
+                    //     />
+                    // </TouchableOpacity>
                     <Animated.Image
                         source={require("../assets/boomboxcropped.png")}
                         style={{

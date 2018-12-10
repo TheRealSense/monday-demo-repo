@@ -48,29 +48,49 @@ class SearchScreen extends React.Component {
             trendingGroups: [
                 {
                     id: 1234,
-                    name: "Beer",
+                    name: "3D printer",
                     image:
-                        "https://cdn.britannica.com/700x450/72/186972-049-26ACDCBE.jpg",
+                        "https://images.unsplash.com/photo-1514063364532-5abd25e38290?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80",
                     icon: ""
                 },
                 {
                     id: 2345,
-                    name: "Arcade",
+                    name: "Music",
                     image:
-                        "http://www.thebasementarcade.com/gameroom/0516/1.jpg",
+                        "https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
                     icon: ""
                 },
                 {
                     id: 3456,
-                    name: "Nature",
+                    name: "EPSON",
                     image:
-                        "https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=350",
+                        "https://images.unsplash.com/photo-1510511336377-1a9caa095849?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80'",
                     icon: ""
                 },
-                { id: 4567, image: "", icon: "" },
-                { id: 6789, image: "", icon: "" },
-                { id: 7890, image: "", icon: "" },
-                { id: 8909, image: "", icon: "" }
+                {
+                  id: 4567,
+                  name: 'Sewing',
+                  image: "https://images.unsplash.com/photo-1517840545241-b491010a8af4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80",
+                  icon: ""
+                },
+                {
+                  id: 6789,
+                  name: 'Vinyl',
+                  image: "https://images.unsplash.com/photo-1521249664898-864e6c1b6d5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80",
+                  icon: ""
+                },
+                {
+                  id: 7890,
+                  name: 'Laser',
+                  image: "https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3823&q=80",
+                  icon: ""
+                },
+                {
+                  id: 8909,
+                  name: 'Overlock',
+                  image: "https://images.unsplash.com/photo-1517840545241-b491010a8af4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80", 
+                  icon: ""
+                }
             ],
             users: [
                 {
