@@ -2,7 +2,7 @@
 import React from "react";
 import {
     createStackNavigator,
-    createTabNavigator
+    createBottomTabNavigator
 } from "react-navigation";
 import stream from "getstream";
 import type { UserSession, CloudClient } from "./types";
@@ -47,7 +47,7 @@ const FeedStack = createStackNavigator({
     Feed: { screen: FeedScreen }
 });
 
-const TabNavigator = createTabNavigator(
+const TabNavigator = createBottomTabNavigator(
     {
         Home: HomeStack,
         Feed: FeedStack,

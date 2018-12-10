@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, StyleSheet } from 'react-native'
-import { createTabNavigator } from 'react-navigation'
+import { createBottomTabNavigator } from 'react-navigation'
 import { colors, fonts } from '../theme'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 	}
 })
 
-const TabNavigator = createTabNavigator(
+const TabNavigator = createBottomTabNavigator(
 	{
 		SignIn: SignIn,
 		SignUp: SignUp
