@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image, StyleSheet } from 'react-native'
-import { createBottomTabNavigator } from 'react-navigation'
+import { createTabNavigator } from 'react-navigation'
 import { colors, fonts } from '../theme'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 	}
 })
 
-const TabNavigator = createBottomTabNavigator(
+const TabNavigator = createTabNavigator(
 	{
 		SignIn: SignIn,
 		SignUp: SignUp
@@ -39,6 +39,7 @@ const TabNavigator = createBottomTabNavigator(
 			}
 		}),
 		initialRouteName: 'SignIn',
+		tabBarPosition: 'bottom',
 		tabBarOptions: {
 			showLabel: true,
 			activeTintColor: colors.primary,
