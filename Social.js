@@ -4,7 +4,9 @@ import {
     createStackNavigator,
     createBottomTabNavigator
 } from "react-navigation";
-
+import stream from "getstream";
+import type { UserSession, CloudClient } from "./types";
+import { Auth } from "aws-amplify";
 import Icon from "./components/Icon";
 import FeedScreen from "./screens/FeedScreen";
 import SearchScreen from "./screens/SearchScreen";
@@ -22,6 +24,44 @@ import { Avatar, StreamApp, IconBadge } from "react-native-activity-feed";
 import type { UserResponse } from "./types";
 
 // $FlowFixMe
+// const authStream = () => {
+//     console.warn("auth run");
+//     let currentUser;
+//     let apiKey = "ygeqczcsmgns";
+//     let appId = "45404";
+//     let apiSecret =
+//         "x2at6sam4adpq76uzr43x2jhv3mnk5x2zjnuudwnstn3qf9rb4swk3vx95kjvxjn";
+//     let token = "";
+//     const client: CloudClient = stream.connectCloud(apiKey, appId);
+
+//     function createUserSession(userId): UserSession {
+//         return client.createUserSession(
+//             stream.signing.JWTUserSessionToken(apiSecret, userId)
+//         );
+//     }
+
+//     const signUpStream = async () => {
+//         try {
+//             const user = await Auth.currentAuthenticatedUser();
+//             currentUser = await createUserSession(user.username);
+//             console.warn(currentUser);
+//             token = currentUser.token;
+//             await currentUser.user.getOrCreate({
+//                 name: user.username,
+//                 url: "Please add your email",
+//                 desc: "Please add your description",
+//                 profileImage: "http://smk.org.uk/wp-content/uploads/avatar.jpg",
+//                 coverImage:
+//                     "http://colorfully.eu/wp-content/uploads/2012/10/empty-road-highway-with-fog-facebook-cover.jpg"
+//             });
+//             await currentUser.followUser(currentUser.user);
+//             return token;
+//         } catch (error) {
+//             console.warn(error);
+//         }
+//     };
+// };
+
 const HomeStack = createStackNavigator({
     Home: { screen: HomeScreen },
     Tools: { screen: Tools },
@@ -119,6 +159,7 @@ const Navigation = createStackNavigator({
 const App = () => {
     let apiKey = "ygeqczcsmgns";
     let appId = "45404";
+    // let token = authStream;
     let token =
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidHJpcGhlbzI0MTAifQ.f1bUYNn9ZSv9yJpPVlvvYYOm1yYpDEqFZ7Lb67spGsM";
 
@@ -133,7 +174,7 @@ const App = () => {
                 desc: "Smart, violent and brutally tough solutions to crime.",
                 profileImage: "https://randomuser.me/api/portraits/men/18.jpg",
                 coverImage:
-                    "http://colorfully.eu/wp-content/uploads/2012/10/empty-road-highway-with-fog-facebook-cover.jpg"
+                    "https://i.ytimg.com/vi/8qLL2Gx3I_k/maxresdefault.jpg"
             }}
         >
             <Navigation />
